@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://team4-database.cwmjuw9z0gli.ap-northeast-2.rds.amazonaws.com:3306/DevDB?serverTimezone=UTC&characterEncoding=UTF-8
-    username: admin
-    password: qwer1234!!
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
   mvc:
     view:
       prefix: /WEB-INF/
