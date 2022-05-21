@@ -33,7 +33,7 @@ public class TestController {
     public String list(Model model) {
 
         model.addAttribute("list","list");
-
+        model.addAttribute("test",new Test(1,"정재빈"));
         return "list";
     }
 

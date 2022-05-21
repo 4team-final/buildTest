@@ -8,6 +8,7 @@
 <body>
 
 <h1> list : ${list}</h1>
+<h1> list : ${test}</h1>
 
 </body>
 </html>
