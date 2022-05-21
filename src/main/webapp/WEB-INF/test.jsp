@@ -10,5 +10,8 @@
 <h1> time : ${time}</h1>
 <h1> name : ${name}</h1>
 <button onclick="window.location.href ='list'">button</button>
+으아아아아아앙
+드디어 성공이다!!
+
 </body>
 </html>
