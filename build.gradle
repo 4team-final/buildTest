@@ -8,6 +8,7 @@ plugins {
 group = 'com.douzone'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
 
 configurations {
     compileOnly {
@@ -15,8 +16,10 @@ configurations {
     }
 }
 
+
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
