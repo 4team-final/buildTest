@@ -27,7 +27,7 @@ function stop(){
 
 function start(){
     sudo echo " "
-    sudo nohup java -jar -Dserver.port=$SERVER_PORT $WAR_FILE /tmp 2>> /dev/null >> /dev/null &
+    sudo nohup java -jar $WAR_FILE /tmp 2>> /dev/null >> /dev/null &
     sudo echo " good server"
 }
 
