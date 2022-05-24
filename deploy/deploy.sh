@@ -27,7 +27,7 @@ function stop(){
 
 function start(){
     sudo echo " "
-    sudo nohup java -jar $WAR_FILE /tmp 2>> /dev/null >> /dev/null &
+    sudo java -jar $WAR_FILE /tmp 2>> /dev/null >> /dev/null
     sudo echo "start process on port: $SERVER_PORT"
 }
 
