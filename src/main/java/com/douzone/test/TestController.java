@@ -1,7 +1,5 @@
 package com.douzone.test;
 
-import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,9 +9,7 @@ import java.net.UnknownHostException;
 import java.time.LocalDateTime;
 
 @Controller
-@MapperScan(basePackages = "com.douzone.test.TestDao")
 public class TestController {
-
 
 
     @GetMapping("/")
@@ -32,8 +28,8 @@ public class TestController {
     @GetMapping("/list")
     public String list(Model model) {
 
-        model.addAttribute("list","list");
-        model.addAttribute("test",new Test(1,"정재빈"));
+        model.addAttribute("list", "list");
+        model.addAttribute("test", new Test(1, "정재빈"));
         return "list";
     }
 
