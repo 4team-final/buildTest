@@ -3,7 +3,7 @@
 
 # Server Port
 # Ex) 8080
-SERVER_PORT=8080
+SERVER_PORT=8081
 # Service Name
 # Ex) springproject
 PROJECT_NAME=test
