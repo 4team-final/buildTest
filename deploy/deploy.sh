@@ -9,7 +9,7 @@ SERVER_PORT=8081
 PROJECT_NAME=test
 
 PROJECT_PATH=/var/lib/jenkins/workspace/$PROJECT_NAME/build/libs
-WAR_FILE=$PROJECT_PATH/$PROJECT_NAME-0.0.1-SNAPSHOT.war
+WAR_FILE=$PROJECT_PATH/$PROJECT_NAME-1.0.1-SNAPSHOT.war
 TMP_PATH_NAME=/tmp/$PROJECT_NAME-pid
 
 # Function
@@ -27,8 +27,8 @@ function stop(){
 
 function start(){
     sudo echo " "
-    sudo nohup java -jar -httpPort=8081 -ajp13Port=-1 -Dserver.port=$SERVER_PORT $WAR_FILE /tmp 2>> /dev/null >> /dev/null &
-    sudo echo "start process on port: $SERVER_PORT"
+    sudo nohup java -jar -Dserver.port=$SERVER_PORT $WAR_FILE /tmp 2>> /dev/null >> /dev/null &
+    sudo echo " good server"
 }
 
 # Function Call
